@@ -85,17 +85,20 @@ const stages = [trailsStage, mainStage];
 //});
 // 隨機文字陣列（多個選項，用 | 分隔標題和副標）
 const randomWords = [
-    "新年快樂 | 萬事如意",
-    "2026 | 幸福滿滿",
-    "恭喜發財 | 大吉大利",
+    "新年快樂|萬事如意",
+    "2026|幸福滿滿",
+    "恭喜發財|大吉大利",
     "2026 | Love & Happiness",
-    "CHÚC MỪNG NĂM MỚI ♡ | Hạnh phúc mãi mãi",
-    "LOVE YOU | Năm mới ngọt ngào",
-	"TẾT VUI VẺ | Cát tường như ý",
-    "NĂM MỚI 2026 | May mắn ngập tràn",
-    "CHÚC BẠN | Năm mới phát tài",
-    "HẠNH PHÚC | Bên nhau mãi mãi",
-	"HAPPY NEW YEAR | Chúc mọi điều tốt đẹp",
+    "CHÚC MỪNG NĂM MỚI♡|",
+    "LOVE YOU | ♡",
+	"新年快樂|萬事如意",
+	"TẾT VUI VẺ|Cát tường như ý",
+    "NĂM MỚI 2026| ",
+    "CHÚC BẠN|Năm mới phát tài",
+    "HẠNH PHÚC|Bên nhau mãi mãi",
+	"HAPPY NEW YEAR| ",
+	"新年快樂|萬事如意",
+	"新年快樂|萬事如意",
     // 繼續加你喜歡的祝福語...
 ];
 // 預先計算所有文字的點陣圖（提升性能，避免重複計算）

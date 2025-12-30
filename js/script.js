@@ -2694,12 +2694,23 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!bgm) return;
 
     // 讓音樂準備好
-    bgm.volume = 0.4; // 音量 40%，不要蓋過煙花聲音
+    bgm.volume = 0.35; // 音量 35%，不要蓋過煙花聲音
 
     // 定義播放函數
     function playBGM() {
-        bgm.play().catch(e => console.log("播放失敗（正常，手機限制）:", e));
-    }
+    bgm.volume = 0;
+    bgm.play();
+    let vol = 0;
+    const fadeIn = setInterval(() => {
+        vol += 0.05;
+        if (vol >= 0.35) {
+            bgm.volume = 0.35;
+            clearInterval(fadeIn);
+        } else {
+            bgm.volume = vol;
+        }
+    }, 200);
+   }
 
     // 方法 A：如果有入口按鈕，點擊時播放
     const entryBtn = document.getElementById('fullscreen-entry-btn');

@@ -89,7 +89,7 @@ const randomWords = [
     "2026|幸福滿滿",
     "恭喜發財|大吉大利",
     "2026 | Love & Happiness",
-    "CHÚC MỪNG NĂM MỚI♡|",
+    "CHÚC MỪNG NĂM MỚI|♡",
     "LOVE YOU | ♡",
 	"新年快樂|萬事如意",
 	"TẾT VUI VẺ|Cát tường như ý",
@@ -104,7 +104,7 @@ const randomWords = [
 // 預先計算所有文字的點陣圖（提升性能，避免重複計算）
 const wordDotsMap = {};
 randomWords.forEach((word) => {
-    wordDotsMap[word] = MyMath.literalLattice(word, 3, "Gabriola,华文琥珀", "90px");
+    wordDotsMap[word] = MyMath.literalLattice(word, 3, "Gabriola,arial", "90px");
 });
 
 

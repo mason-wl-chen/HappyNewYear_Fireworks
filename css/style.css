@@ -37,9 +37,6 @@ body {
 	height: 100%;
 }
 
-html {
-	background-color: #000;
-}
 
 body {
 	overflow: hidden;
@@ -47,6 +44,10 @@ body {
 	font-family: "Russo One", arial, sans-serif;
 	line-height: 1.25;
 	letter-spacing: 0.06em;
+}
+
+body, .canvas-container {
+    background: linear-gradient(to bottom, #0b0c1a, #1a1a2e, #16213e);
 }
 
 .hide {
@@ -378,7 +379,7 @@ body {
 .entry-content {
     text-align: center;
     color: white;
-    font-family: "Gabriola", "calibri", "Segoe Script", cursive, sans-serif;
+    font-family: "Gabriola", "arial", "Segoe Script", cursive, sans-serif;
     
     /* 框框變小了！ */
     max-width: 85%;           /* 原本可能100%，現在縮小 */

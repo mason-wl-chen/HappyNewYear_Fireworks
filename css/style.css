@@ -37,6 +37,9 @@ body {
 	height: 100%;
 }
 
+html {
+	background-color: #000;
+}
 
 body {
 	overflow: hidden;
@@ -46,9 +49,10 @@ body {
 	letter-spacing: 0.06em;
 }
 
-body, .canvas-container {
+
+/*body, .canvas-container {
     background: linear-gradient(to bottom, #0b0c1a, #1a1a2e, #16213e);
-}
+} */
 
 .hide {
 	opacity: 0;
